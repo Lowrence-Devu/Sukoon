@@ -1,0 +1,107 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+body {background-color: #000000;
+       background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.Mom {
+   background-color: #000000;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    image-resolution: auto;
+    animation: fadeOut 2s ease-in-out;
+}
+
+.Mom h1 {
+    margin: 10px;
+    padding: 1%;
+    border: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 80px;
+    font-style: italic;
+    font-family: "comic sans ms";
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    animation: zoomIn 2s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.button-container a {
+    text-decoration: none;
+    color: inherit;
+}
+.footer{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkCEwt7cRT2GvrpQ6OTNIk6NrVgVKK_lqGCA&s);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+#button{
+
+    padding: 5px;
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    color: #343a40;
+}

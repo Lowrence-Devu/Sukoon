@@ -1,0 +1,120 @@
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes firecracker {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.firecracker {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    animation: firecracker 1s infinite;
+}
+
+.firecracker::before,
+.firecracker::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    animation: firecracker 1s infinite;
+}
+
+.firecracker::before {
+    top: -20px;
+    left: -20px;
+}
+
+.firecracker::after {
+    top: 20px;
+    left: 20px;
+}
+
+
+body {
+    background-color: #000000;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "alex brush";
+    margin: 20px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.family {
+    /*background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230721/pngtree-d-rendering-of-orange-brick-wallpaper-background-in-high-resolution-4k-image_3714290.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;*/
+   
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    image-resolution: auto;
+    image-orientation: from-image;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.family h1 {
+    margin: 2px;
+    padding: 10px;
+    border: #000000;
+    color: rgb(234, 141, 255);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 80px;
+    font-style: italic;
+    font-family: "comic sans ms";
+    animation: bounce 2s infinite;
+}
+
+.family img {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    animation: zoomIn 2s ease-in-out;
+}
